@@ -48,6 +48,10 @@ describe("FizzBuzz", function() {
       expect(fizzbuzz.playGame(35)).toBe("buzz")
     });
 
+    it("should return fizzbuzz for numbers divisible by 15", function(){
+      expect(fizzbuzz.playGame(45)).toBe("fizzbuzz")
+    });
+
   });
 
 });
