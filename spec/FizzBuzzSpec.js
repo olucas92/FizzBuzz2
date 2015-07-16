@@ -52,6 +52,10 @@ describe("FizzBuzz", function() {
       expect(fizzbuzz.playGame(45)).toBe("fizzbuzz")
     });
 
+    it("should return a number for numbers that aren't divisible by 3, 5 or 15", function(){
+      expect(fizzbuzz.playGame(37)).toBe("number")
+    });
+
   });
 
 });
