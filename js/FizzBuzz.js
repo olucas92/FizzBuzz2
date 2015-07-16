@@ -1,5 +1,11 @@
 var FizzBuzz = function(){};
 
+FizzBuzz.prototype.playGame = function(number) {
+  if(this.isDivisibleByThree(number)){
+    return 'fizz'
+  }
+};
+
 FizzBuzz.prototype.isDivisibleByThree = function(number) {
   return number % 3 === 0;
 };
