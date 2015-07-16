@@ -44,6 +44,10 @@ describe("FizzBuzz", function() {
       expect(fizzbuzz.playGame(9)).toBe("fizz")
     });
 
+    it("should return buzz for numbers divisible by 5", function(){
+      expect(fizzbuzz.playGame(35)).toBe("buzz")
+    });
+
   });
 
 });
