@@ -6,7 +6,7 @@ describe("FizzBuzz", function() {
 
     beforeEach(function(){
       fizzbuzz = new FizzBuzz;
-    })
+    });
 
     it("is divisible by 3", function() {
       expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);
@@ -30,6 +30,18 @@ describe("FizzBuzz", function() {
 
     it("is not divisible by 15", function(){
       expect(fizzbuzz.isDivisibleByFifteen(54)).toBe(false);
+    });
+
+  });
+
+  describe("rules of the game", function(){
+
+    beforeEach(function(){
+      fizzbuzz = new FizzBuzz;
+    });
+
+    it("should return fizz for numbers divisible by 3", function(){
+      expect(fizzbuzz.playGame(9)).toBe("fizz")
     });
 
   });
